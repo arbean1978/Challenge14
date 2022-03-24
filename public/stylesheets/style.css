@@ -13,7 +13,7 @@ html {
 
 main,
 .site-name {
-    background-color: #b8cba2;
+    background-color: rgb(126, 126, 212);
 }
 
 a,
@@ -176,11 +176,11 @@ main {
 }
 
 .delete-post-btn {
-    background-color: #d41414;
+    background-color: #3114d4;
 }
 
 .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #913dff;
 }
 
 .post {

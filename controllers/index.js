@@ -1,16 +1,15 @@
-const Sequelize = require('sequelize');
-require('dotenv').config();
+const router = require('express').Router();
 
-let sequelize;
+const apiRoutes = require('./api');
+const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
 
-if (process.env.JAWSDB_URL) {
-    sequelize = new Sequelize(process.env.JAWSDB_URL);
-} else {
-    sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
-        host: 'localhost',
-        dialect: 'mysql',
-        port: 3306
-    });
-}
+router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
 
-module.exports = sequelize;
+router.use((req, res) => {
+  res.status(404).end();
+});
+
+module.exports = router;
