@@ -1,14 +1,37 @@
 {
+  "name": "challenge14",
+  "version": "1.0.0",
+  "description": "This project uses the Model-View-Controller (MVC) paradigm to create a blog-style website where developers can post articles with commentary, edit posts, and comment on other user's articles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbean1978/Challenge14.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arbean1978/Challenge14/issues"
+  },
+  "homepage": "https://github.com/arbean1978/Challenger14#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
-    "dotenv": "^16.0.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.2",
+    "express-handlebars": "^5.3.5",
     "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "path": "^0.12.7",
-    "sequelize": "^6.17.0",
-    "session": "^0.1.0"
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
