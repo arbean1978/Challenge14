@@ -24,6 +24,9 @@ Post.init(
                 len: [1]
             }
         },
+
+    
+
         user_id: {
             type: DataTypes.INTEGER,
             references: {

@@ -37,10 +37,20 @@ User.init(
             }
         },
     
+      
+     // createdAt: {
+     //     field: 'created_at',
+     //     type: sequelize.DATE,
+     // },
+     // updatedAt: {
+     //     field: 'updated_at',
+     //     type: sequelize.DATE,
+     // },
+  
     password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
             // this means the password must be at least four characters long
             len: [4]
             }
